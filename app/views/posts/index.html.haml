@@ -2,4 +2,4 @@
 
 - @posts.each do |t|
   %h2= t.title
-  %p= t.body
+  = link_to "#{t.title}", post_path(t)
