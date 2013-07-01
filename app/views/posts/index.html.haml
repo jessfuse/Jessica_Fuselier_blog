@@ -1,1 +1,5 @@
-%h2 Crimson Vinyl 
+%h2= "#{@name}'s Blog"
+
+- @posts.each do |t|
+  %h2= t.title
+  %p= t.body
