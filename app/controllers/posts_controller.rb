@@ -44,6 +44,13 @@ class PostsController < ApplicationController
         format.json {render json: @post.errors, status: :unprocessable_entry}
       end 
     end 
+  end 
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy 
+
+    redirect_to posts_path 
   end   
       
 

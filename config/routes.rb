@@ -5,6 +5,7 @@ JessicaFuselierBlog::Application.routes.draw do
   post 'posts' => 'posts#create'
   get '/post/:id/edit' => 'posts#edit'
   put 'post/:id' => 'posts#update'
+  delete 'post/:id' => 'posts#destroy'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
